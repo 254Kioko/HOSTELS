@@ -1,37 +1,40 @@
 <?php
-// Get the form data
+//get data from form  
 $name = $_POST['name'];
-$number = $_POST['number'];
-$email = $_POST['email'];
-$gender = $_POST['gender'];
+$number= $_POST['number'];
+$email= $_POST['email'];
+$gender= $_POST['gender'];
 
-// Send the email
-$to = "stayhostels@gmail.com";
-$subject = "BOOKING REQUEST";
+$to = "stayhostels@mail.com";
+$subject = "NEW BOOKING REQUEST";
 $body = "Name: $name\nNumber: $number\nEmail: $email\nGender: $gender";
-$headers = "From: $email";
-
-if (mail($to, $subject, $body, $headers)) {
-  echo "Booking submission was successful";
-} else {
-  echo "Form submission failed";
+$headers = "From: noreply@stayhostels.org" . "\r\n" .
+"CC: kiokoeddie254@gmail.com";
+if($email!=NULL){
+    mail($to,$subject,$body,$headers);
 }
+if(mail($to, $subject, $body, $headers)) {
+        echo "Booking was Successful!!";
+    } else {
+        echo "Sorry, your booking request could not be sent at this time.";
+    }
 ?>
 
-<!DOCTYPE html>
+
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
+
 
     <!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
-	<title>STAY HOSTELS </title>
-		
 
-	
+<!DOCTYPE html>
+<head>
+		<meta charset="utf-8">
+	<title>STAY HOSTELS </title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,">
     
     <!-- CSS
@@ -71,6 +74,9 @@ if (mail($to, $subject, $body, $headers)) {
 	
     
 </head>
+		
+
+	
 <body class="contact-page">
 <div class="wrap-body">
 
@@ -117,8 +123,9 @@ if (mail($to, $subject, $body, $headers)) {
 								<span> 247247 </span>  
 							<h5> ACCOUNT NUMBER: </h5>
 							<span> 0707139152 </span> <br>
+							<br>
 						
-								<a href="https://goo.gl/maps/ujM1iEVPgXZQeXia7?coh=178573&entry=tt" target="new"> <img class="example-image" src="images/location.png" height="50" width="50" alt="" /></a>
+								<a href="https://goo.gl/maps/ujM1iEVPgXZQeXia7?coh=178573&entry=tt" target="new"> <img class="example-image" src="images/location.png" height="50" width="50" alt="" /></a> 
 								<a class="button" href="https://wa.link/04qo6t">SEND THE CONFIRMATION MESSAGE</a>
 							</div>
 						</div>
