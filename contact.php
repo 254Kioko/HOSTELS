@@ -86,7 +86,7 @@ if(mail($to, $subject, $body, $headers)) {
 		<div class="row">
 			<div id="cssmenu">
 				<ul>
-				   <li class='active'><a href="index.html">Home</a></li>
+				   <li class='active'><a href="./">Home</a></li>
 				    
 				   <li><a href="./contact">BOOK</a></li>
 				</ul>
