@@ -88,7 +88,7 @@ if(mail($to, $subject, $body, $headers)) {
 				<ul>
 				   <li class='active'><a href="index.html">Home</a></li>
 				    
-				   <li><a href="contact.html">BOOK</a></li>
+				   <li><a href="./contact">BOOK</a></li>
 				</ul>
 			</div>
 			
