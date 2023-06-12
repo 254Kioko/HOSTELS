@@ -24,7 +24,7 @@ function SubForm (){
           alert("Booking was successful! :)")
         },
         error: function(){
-          alert("Booking was successful!  :)")
+          alert("Booking error!  :(")
         }
     });
 }
@@ -81,9 +81,9 @@ function SubForm (){
 		<div class="row">
 			<div id="cssmenu">
 				<ul>
-				   <li class='active'><a href="index.html">HOME</a></li>
+				   <li class='active'><a href="./">HOME</a></li>
 				   
-				   <li><a href="contact.html">BOOK</a></li>
+				   <li><a href=".contact">BOOK</a></li>
 				</ul>
 			</div>
 		
@@ -117,17 +117,17 @@ function SubForm (){
               <label class="row">
                                                         <input type="text" name="name" id="name" placeholder="Enter name" required="required" />
                                                     </label>
-                                                    
+                                                    <br>
                                                    
                                                     <label class="row">
                                                         <input type="text" name="number" id="number" placeholder="Enter Phone Number" required="required" />
                                                     </label>
-                                                    
+                                                    <br>
                                                     <label class="row">
                                                         <input type="text" name="email" id="email" placeholder="Enter Email" required="required" />
 
                                                     </label>
-                                                   
+                                                   <br>
                                                     
                                                     
                                                     <label for="gender"></label>
@@ -137,9 +137,10 @@ function SubForm (){
      <option value="female">Female</option>
    </select>
    <br>
-   
-<button onclick="SubForm()">Submit</button>
+   <br>
+
   </form>
+<button onclick="SubForm()">Submit</button>
   
 											
 											</div>
