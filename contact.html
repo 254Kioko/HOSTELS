@@ -17,14 +17,16 @@
 <script>
 function SubForm (){
     $.ajax({
-        url:'https://api.apispreadsheets.com/data/WZCZ1EiNGP0I1bUm/',
+        url:'https://api.apispreadsheets.com/data/crdt4sHAJIkO3T6G/
+
+',
         type:'post',
         data:$("#ff").serializeArray(),
         success: function(){
           alert("Booking was successful! :)")
         },
         error: function(){
-          alert("Booking was successful! :)")
+          alert("Booking error! :(")
         }
     });
 }
@@ -113,7 +115,7 @@ function SubForm (){
 											<h5 class="color-orange">Personal Details</h5>
 											<div id="contact_form">
 
-												 <form id="ff">
+												 <form id="ff"  action="#" onsubmit="required()>
               <label class="row">
                                                         <input type="text" name="name" id="name" placeholder="Enter name" required="required" />
                                                     </label>
