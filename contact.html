@@ -19,14 +19,39 @@
 <script>
 function SubForm (){
     $.ajax({
-        url:'https://api.apispreadsheets.com/data/WZCZ1EiNGP0I1bUm/',
+        url:'https://api.apispreadsheets.com/data/crdt4sHAJIkO3T6G/',
         type:'post',
         data:$("#ff").serializeArray(),
+	    function validateForm() {
+  // Get the form data from the user.
+  var name = document.getElementById("name").value;
+  var number = document.getElementById("number").value;
+  var email = document.getElementById("email").value;
+  var gender = document.getElementById("gender").value;
+
+  // Check if all fields are filled in.
+  if (name === "" || number === "" || email === "" || gender === "") {
+    alert("Please fill in all fields.");
+    return false;
+  }
+
+  // Check if the email address is valid.
+  if (!/\w+@\w+\.\w+/.test(email)) {
+    alert("Please enter a valid email address.");
+    return false;
+  }
+
+  // The form is valid, so allow it to be submitted.
+  return true;
+}
+
+// Add the event listener to the form.
+document.getElementById("ff").addEventListener("sumbit", validateForm);
         success: function(){
           alert("Booking was successful! :)")
         },
         error: function(){
-          alert("Booking was successful! :)")
+          alert("Error! :)")
         }
     });
 }
