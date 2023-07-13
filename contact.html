@@ -17,12 +17,7 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 <script>
-function SubForm (){
-    $.ajax({
-        url:'https://api.apispreadsheets.com/data/crdt4sHAJIkO3T6G/',
-        type:'post',
-        data:$("#ff").serializeArray(),
-	    function validateForm() {
+	function validateForm() {
   // Get the form data from the user.
   var name = document.getElementById("name").value;
   var number = document.getElementById("number").value;
@@ -47,6 +42,11 @@ function SubForm (){
 
 // Add the event listener to the form.
 document.getElementById("ff").addEventListener("sumbit", validateForm);
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/WZCZ1EiNGP0I1bUm/',
+        type:'post',
+        data:$("#ff").serializeArray(),
         success: function(){
           alert("Booking was successful! :)")
         },
