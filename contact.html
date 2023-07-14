@@ -17,6 +17,45 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 <script>
+	function validateForm() {
+  // Initialize a variable to track whether the form is valid.
+  var valid = true;
+
+  // Check if the name field is filled in.
+  if (!document.getElementById("name").value) {
+    valid = false;
+    document.getElementById("name").style.border = "2px solid red";
+    alert("Please enter your name.");
+  }
+
+  // Check if the number field is filled in.
+  if (!document.getElementById("number").value) {
+    valid = false;
+    document.getElementById("number").style.border = "2px solid red";
+    alert("Please enter your phone number.");
+  }
+
+  // Check if the email field is filled in.
+  if (!document.getElementById("email").value) {
+    valid = false;
+    document.getElementById("email").style.border = "2px solid red";
+    alert("Please enter your email address.");
+  }
+
+  // Check if the gender field is filled in.
+  if (!document.getElementById("gender").value) {
+    valid = false;
+    document.getElementById("gender").style.border = "2px solid red";
+    alert("Please select your gender.");
+  }
+
+  // If the valid variable is still true, then the form is valid and can be submitted.
+  if (valid) {
+    return true;
+  } else {
+    return false;
+  }
+}
 	
 function SubForm (){
     $.ajax({
@@ -144,7 +183,7 @@ function SubForm (){
    </select>
    <br>
    <br>
-<button onclick="SubForm()" onclick="required()"> Submit </button>
+<button onclick="SubForm()" onclick="return validateForm()"> Book </button>
   </form>
 
   
