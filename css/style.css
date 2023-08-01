@@ -151,6 +151,10 @@ footer ul.social-buttons{margin-top: 70px;}
 footer ul.social-buttons li{display: inline-block;}
 footer ul.social-buttons li a{padding-top: 2px;display: block;width: 67px;height: 67px;border-radius: 50%;font-size: 37px;line-height: 2;color: #ffffff;background-color: #464646;transition-duration: 0.3s;margin-right: 8px;}
 footer ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active{background-color: #5ABD5E;}
+.social-buttons li a:hover i {
+transform: translate(0, -10px) scale(1.1);
+transition: all 0.2s ease-in-out;
+}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Button--------------------------------- */
