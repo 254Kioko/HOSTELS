@@ -117,17 +117,22 @@ header .logo img{display: inline-block;margin: 0 auto 30px;max-width: 300px;}
 .content-box.box-4 h3 {font-weight: 500; line-height: 1.2;}
 .content-box.box-4 img{margin-bottom: 30px;max-width: 250px;border-radius: 50%;}
 
-.icon li{
-  font-size: 350%;
-  width: 25%;
+}
+.hostel-icons {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  margin: 0 auto;
-  
-  padding-top: margin-right: 8px;
-margin-top: 70px;  
+  justify-content: space-between;
+}
+.icon li{
+ display:inline-block;
+ font-size: 400%;
+ margin: 0 50px 50px 0;
+ margin-left: 50px;
+
+}
+
+.description h1 {
+  color: black;
 }
 
 /* ---MainContent-Article--- */
