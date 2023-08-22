@@ -135,7 +135,7 @@ header .logo img{display: inline-block;margin: 0 auto 30px;max-width: 300px;}
   color: black;
 }
 .field {
-  border: 2px solid gblack;
+  border: 2px solid black;
 }
 /* ---MainContent-Article--- */
 #main-content{}
