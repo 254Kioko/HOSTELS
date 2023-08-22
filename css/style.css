@@ -134,7 +134,9 @@ header .logo img{display: inline-block;margin: 0 auto 30px;max-width: 300px;}
 .description h1 {
   color: black;
 }
-
+.field {
+  border: 2px solid gblack;
+}
 /* ---MainContent-Article--- */
 #main-content{}
 #main-content .wrap-content{}
