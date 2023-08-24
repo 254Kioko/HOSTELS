@@ -19,10 +19,10 @@
 	<title>STAY HOSTELS</title> 
 
 	<script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous"></script>
-	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
 	        function validateForm() {
   // Get the form data from the user.
   var name = document.getElementById("name").value;
@@ -51,14 +51,14 @@ document.getElementById("ff").addEventListener("click", validateForm();
 	
 function SubForm (){
     $.ajax({
-        url:'https://api.apispreadsheets.com/data/XlkibFk5yRkD51IU/',
+        url:'https://api.apispreadsheets.com/data/WZCZ1EiNGP0I1bUm/',
         type:'post',
         data:$("#ff").serializeArray(),
         success: function(){
           alert("Booking was successful! :)")
         },
         error: function(){
-          alert("Booking error!:)")
+          alert("Booking was successful!:)")
         }
     });
 }
@@ -259,7 +259,7 @@ function SubForm (){
 				<h3>Contact</h3>
 				<span><a href="mailto:stayhostels@gmail.com"> EMAIL</a>   </span></br>
 				<span> <a href="https://goo.gl/maps/RgsWCh4y9k22v4Up7?coh=178573&entry=tt" target="new"></a> Nairobi West </span></br>
-				<span><strong> <a href="mailto:kiokoeddie254@gmail.com"> Developer </a> </strong></span>
+				<span><strong>Designed by <a href="mailto:kiokoeddie254@gmail.com"> Eddie </a> </strong></span>
 				<ul class="social-buttons">
 					
 					<li><a href="tel:0799543648"><i class=" fa fa-phone"></i></a>
