@@ -19,10 +19,10 @@
 	<title>STAY HOSTELS</title> 
 
 	<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-<script>
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script
 	        function validateForm() {
   // Get the form data from the user.
   var name = document.getElementById("name").value;
@@ -51,7 +51,7 @@ document.getElementById("ff").addEventListener("click", validateForm();
 	
 function SubForm (){
     $.ajax({
-        url:'https://api.apispreadsheets.com/data/WZCZ1EiNGP0I1bUm/',
+        url:'https://api.apispreadsheets.com/data/XlkibFk5yRkD51IU/',
         type:'post',
         data:$("#ff").serializeArray(),
         success: function(){
