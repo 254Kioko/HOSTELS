@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<link rel="apple-touch-icon" sizes="200x200" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>STAY HOSTELS | FULLY FURNISHED ACCOMMODATION </title>
+	
+
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsiveslides.css">
+	
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<script src="js/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/jquery183.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+		  // Slideshow 
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+		});
+
+		
+	</script>
+
+	
+
+    
+</head>
+<body class="home-page">
+<div class="wrap-body">
+
+<!--////////////////////////////////////Header-->
+<header >
+	
+	<div class="wrap-header zerogrid">
+		<div class="row">
+			<div id="cssmenu"> 
+				<ul>
+				   <li class='active'><a href="index.html/">HOME</a></li>
+				  
+				   <li><a href="contact.html">BOOK</a></li>
+									   <li><a href="#socials">SOCIALS</a> </li>
+									   <li><a href="pictorials.html">PICTORIALS</a></li>
+
+									   
+
+				</ul>
+			</div>
+			
+	</div>
+</header>
+
+<footer>
+	<div class="wrap-footer">
+		<div class="zerogrid">
+			<div class="row">
+				<h3>Contact</h3>
+				<span> Phone Number <a href="tel:+254799543648"> </a> +254799543648  </span></br>
+				
+				
+				<span> <a href="https://goo.gl/maps/ujM1iEVPgXZQeXia7?coh=178573&entry=tt" target="new">STAY HOSTELS </a> </span></br>
+								<span> Designed by <a href="tel:+254741056273"> Eddie  </a></span> <br> 
+
+<br>
+				 <a id="socials"></a>
+
+				<ul class="social-buttons">
+
+					<li><a href="tel:+254799543648"><i class=" fa fa-phone"></i></a>
+					</li>
+					<li><a href="https://wa.link/04qo6t"><i class=" fa fa-whatsapp"></i></a>
+					</li>
+					<li><a href="https://www.instagram.com/stayhostels/"><i class="fa fa-instagram"></i></a>
+					</li>
+					<li><a href="mailto:stayhostels@gmail.com"><i class="fa fa-envelope"></i></a>
+					</li>
+					<li><a href="mailto:stayhostels@gmail.com"><i class="fa fa-github"></i></a>
+					</li>
+				</ul>
+				<span>Copyright &copy; 2023 Stay Hostels </span>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+	<!-- Google Map -->
+	<script>
+		$('.maps').click(function () {
+		$('.maps iframe').css("pointer-events", "auto");
+	});
+
+	$( ".maps" ).mouseleave(function() {
+	  $('.maps iframe').css("pointer-events", "none"); 
+	});
+	</script>
+	
+</div>
+</body></html>
