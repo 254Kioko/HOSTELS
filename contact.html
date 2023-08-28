@@ -165,15 +165,20 @@ function SubForm (){
 
                                                     </label>
                                                    <br>
-                                                    
-                                                    
-                                                    <label for="gender"></label>
-  <select name="gender">
+ <label for="check-in">Check-in Date:
+<input type="date" name="date" id="date"  required="required" > 
+                       
+</label>
+											<br>
+<label class="row">
+  <select name="gender" required="required" >
     <option value="">Select your gender</option>
     <option value="male">Male</option>
      <option value="female">Female</option>
+
    </select>
-   <br>
+
+</label>
    <br>
 <button class="custom-btn btn-7" onclick="return validateForm()"> <h6>Book </h6></button>
   </form>
