@@ -310,14 +310,14 @@ select option {
 }
 #cssmenu > ul > li > a {
   padding: 27px 17px;
-  letter-spacing: 2px;
+  letter-spacing: 15px;
   text-decoration: none;
   color: #fff;
   font-weight: 500; 
   text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
-  color: #5ABD5E;
+  color: #FFA500;
 } 
 #cssmenu ul ul {
   position: absolute;
