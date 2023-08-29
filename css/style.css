@@ -67,7 +67,7 @@ body .wrap-body{}
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Header--------------------------------- */
 /* ---------------------------------------------------------------------------- */
-header{background: 	#FFA500	;padding: 60px 0 40px;}
+header{background: 	#013220	;padding: 60px 0 40px;}
 header .wrap-header{}
 
 
@@ -288,7 +288,7 @@ select option {
 #cssmenu {
   z-index: 999;
   display: inline-block;
-  float: right;
+  float: left;
   
 }
 #cssmenu > ul > li {
