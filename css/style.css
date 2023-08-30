@@ -272,7 +272,7 @@ header .logo img{display: inline-block;margin: 0 auto 30px;max-width: 300px;}
 }
 
 :not(.overlay) > .card:hover {
-  --lightness: 85%;
+  --lightness: 35%;
   background: hsla(var(--hsl), 0.1);
 }
 
