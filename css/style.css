@@ -276,6 +276,75 @@ header .logo img{display: inline-block;margin: 0 auto 30px;max-width: 300px;}
   background: hsla(var(--hsl), 0.1);
 }
 
+
+
+
+
+
+
+
+
+.description h1 {
+  color: #013220;
+  font-size: 25px;
+
+}
+.describe h5{
+  color: orange;
+  font-size: 15px;
+
+}
+.naps{
+  color:#0d0d0d;
+  font-size: 15px;
+
+}
+.naps .fa-check {
+  border-radius: 50%;
+  background-color: orange;
+}
+
+
+
+
+
+
+.description {
+  position: relative;
+  animation: flyin 1.5s ease-in-out;
+}
+
+@keyframes flyin {
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+.describe h5 {
+  position: relative;
+  animation: flyin 5s ease-in-out;
+}
+
+@keyframes hop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.description .fa-question {
+  font-size: 40px;
+color: orange;
+}
+
 /* ---MainContent-Article--- */
 #main-content{}
 #main-content .wrap-content{}
