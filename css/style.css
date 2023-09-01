@@ -344,6 +344,37 @@ header .logo img{display: inline-block;margin: 0 auto 30px;max-width: 300px;}
   font-size: 40px;
 color: orange;
 }
+/* Set initial position to the left of the container */
+.PICS .soma {
+  position: relative;
+  left: -100%; /* Move the image out of view to the left */
+  animation: slideIn 2s ease forwards; /* Use CSS animation */
+}
+
+/* Define the animation */
+@keyframes slideIn {
+  to {
+    left: 0; /* Move the image to the center */
+  }
+}
+/* Add some initial styling to the image */
+.PICS .soma {
+  width: 90%; /* Set the image width to 100% */
+  transition: all 0.3s ease; /* Add a smooth transition effect for animation */
+}
+
+/* Define the hover effect */
+.PICS .soma:hover {
+  transform: scale(1.1); /* Zoom in the image by 10% */
+  filter: blur(2px); /* Apply a 5px blur to the image */
+}
+
+
+/* Apply animation when the element is in the viewport */
+.PICS .soma.in-viewport {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 /* ---MainContent-Article--- */
 #main-content{}
