@@ -499,6 +499,16 @@ select option {
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------Menu---------------------------------- */
 /* ---------------------------------------------------------------------------- */
+#cssmenu ul li {
+  display: inline-block;
+  margin: 0 10px; /* Add space between list items */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* CSS for the hopping animation on hover */
+#cssmenu ul li:hover {
+  transform: translateY(-10px); /* Move the list item 5px upwards */
+}
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
