@@ -344,11 +344,12 @@ header .logo img{display: inline-block;margin: 0 auto 30px;max-width: 300px;}
   font-size: 40px;
 color: orange;
 }
+
 /* Set initial position to the left of the container */
 .PICS .soma {
   position: relative;
   left: -100%; /* Move the image out of view to the left */
-  animation: slideIn 2s ease forwards; /* Use CSS animation */
+  animation: slideIn 5s ease forwards; /* Use CSS animation */
 }
 
 /* Define the animation */
