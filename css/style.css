@@ -304,7 +304,9 @@ header .logo img{display: inline-block;margin: 0 auto 30px;max-width: 300px;}
   background-color: orange;
 }
 
-
+.naps .fa-minus{
+  color:orange;
+}
 
 
 
