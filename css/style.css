@@ -461,6 +461,9 @@ color: orange;
   transform: scale(1.1); /* Zoom in the image by 10% on hover */
   filter: blur(1px); /* Apply a blur effect to the image on hover */
 }
+.col-1-2 {
+  background-color: orange;
+}
 
 /* ---MainContent-Article--- */
 #main-content{}
