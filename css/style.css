@@ -501,6 +501,11 @@ color: orange;
 .fa {
   font-size: 24px; /* Adjust the font size as needed */
 }
+#contact_form {
+  padding: 50px; /* Add padding for spacing between the form and the shadow */
+  box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.2); /* Adjust the shadow as needed */
+  border-radius: 25px; /* Add rounded corners to the form */
+}
 
 /* ---MainContent-Article--- */
 #main-content{}
