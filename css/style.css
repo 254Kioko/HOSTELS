@@ -521,7 +521,42 @@ color: orange;
 #contact_form:hover {
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4); /* Adjust the shadow on hover */
 }
+.neigh h3 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  font-size: 30px;
+  padding: 50px;
 
+}
+.wrap-col img {
+  mix-blend-mode: multiply; /* You can experiment with other blend modes like overlay, screen, etc. */
+  opacity: 0.8; /* Adjust the opacity to your preference */
+}
+.wrap-col img {
+  width: 5%; 
+  max-width: 300px; /* Set a maximum width if necessary */
+  display: block; /* Ensures the image is a block element */
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add some margin for spacing */
+  margin-bottom: 20px; /* Add some margin for spacing */
+  padding: 10px;
+
+}
+.wrap-col img {
+  animation: hop 1s infinite alternate; /* Use alternate to make it hop back and forth */
+}
+
+@keyframes hop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px); /* Adjust the distance the image hops */
+  }
+}
 
 .CSSgal {
 	position: relative;
