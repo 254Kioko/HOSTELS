@@ -496,6 +496,12 @@ color: orange;
   display: inline-block;
   margin-right: 50px; /* Add margin to space the icons horizontally */
 }
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+  .up {
+    display: block; /* Show the menu on smaller screens */
+  }
+}
 
 /* Additional styling for the icons */
 .fa {
@@ -505,6 +511,15 @@ color: orange;
   padding: 50px; /* Add padding for spacing between the form and the shadow */
   box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.2); /* Adjust the shadow as needed */
   border-radius: 25px; /* Add rounded corners to the form */
+}
+#contact_form {
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Initial shadow effect */
+  transition: box-shadow 0.3s ease; /* Add a smooth transition on hover */
+}
+
+#contact_form:hover {
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4); /* Adjust the shadow on hover */
 }
 
 /* ---MainContent-Article--- */
