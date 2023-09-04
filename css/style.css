@@ -726,6 +726,42 @@ color: orange;
   animation: zoomIn 6s ease infinite; /* Adjust the duration (6s) as needed */
   transform-origin: center center;
 }
+/* Add mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .CSSgal .slider > * {
+    height: auto; /* Let the images adjust their height */
+    max-width: 100%; /* Ensure images fit within the screen width */
+  }
+
+  .CSSgal .slider {
+    white-space: normal; /* Allow text to wrap */
+  }
+
+  /* Adjust the font size and spacing for readability on mobile */
+  .CSSgal .slider h2 {
+    margin-top: 10vh; /* Adjust as needed */
+    font-size: 2em; /* Adjust the font size as needed */
+    letter-spacing: 0;
+    word-spacing: 0;
+  }
+
+  /* Ensure navigation buttons are responsive */
+  .CSSgal .prevNext a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+
+  /* Adjust the bullets' size and spacing for mobile */
+  .CSSgal .bullets > a {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+}
+
 /* ---MainContent-Article--- */
 #main-content{}
 #main-content .wrap-content{}
