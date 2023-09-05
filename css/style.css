@@ -717,43 +717,7 @@ color: orange;
 }
 
 
-.up {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: -100px; /* Add margin to adjust the vertical position */
-}
 
-.iconz {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.iconz li.upp {
-  display: inline-block;
-  margin-left: 10px; /* Add margin between icons if needed */
-}
-
-.iconz li.upp a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.fa {
-  font-size: 24px; /* Adjust the font size as needed */
-}
-
-
-.iconz li.upp {
-  display: inline-block;
-  margin-right: 50px; /* Add margin to space the icons horizontally */
-}
-
-/* Additional styling for the icons */
-.fa {
-  font-size: 24px; /* Adjust the font size as needed */
-}
 
 #contact_form {
   padding: 50px; /* Add padding for spacing between the form and the shadow */
