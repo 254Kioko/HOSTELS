@@ -25,6 +25,8 @@
   	<link rel="stylesheet" href="css/zerogrid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsiveslides.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 	
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -116,7 +118,7 @@
 <footer>
 	<div class="wrap-footer">
 		<div class="zerogrid">
-			<div class="row">
+			<div class="row" data-aos="fade-up">
 				<h3>Contact Developer</h3>
 				
 				
@@ -124,7 +126,7 @@
 <br>
 				 <a id="socials"></a>
 
-				<ul class="social-buttons">
+				<ul class="social-buttons" data-aos="fade-up">
 
 					<li><a href="tel:+254741056273"><i class=" fa fa-phone"></i></a>
 					</li>
@@ -155,4 +157,11 @@
 	</script>
 	
 </div>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init( {
+	disable: false,
+	delay: 0,
+  });
+</script>
 </body></html>
