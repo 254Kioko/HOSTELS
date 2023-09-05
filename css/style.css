@@ -362,7 +362,7 @@ color: orange;
 }
 /* Add some initial styling to the image */
 .PICS .soma {
-  width: 90%; /* Set the image width to 100% */
+  width: 100%; /* Set the image width to 100% */
   transition: all 0.3s ease; /* Add a smooth transition effect for animation */
 }
 
@@ -536,7 +536,7 @@ color: orange;
   opacity: 0.8; /* Adjust the opacity to your preference */
 }
 .wrap-col img {
-  width: 5%; 
+  width: 100%; 
   max-width: 300px; /* Set a maximum width if necessary */
   display: block; /* Ensures the image is a block element */
   float: left; /* Float the image to the left */
