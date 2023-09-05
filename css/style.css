@@ -361,10 +361,7 @@ color: orange;
   }
 }
 /* Add some initial styling to the image */
-.PICS .soma {
-  width: 100%; /* Set the image width to 100% */
-  transition: all 0.3s ease; /* Add a smooth transition effect for animation */
-}
+
 
 /* Define the hover effect */
 .PICS .soma:hover {
