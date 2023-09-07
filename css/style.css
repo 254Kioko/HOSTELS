@@ -273,8 +273,8 @@ select option {
 
 
 
-.cardd-content img{
-  width: 3%;
+.cardd-content a i {
+  font-size: 24px; /* Adjust the font size as needed */
 }
 
 .main {
