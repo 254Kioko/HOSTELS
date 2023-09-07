@@ -850,7 +850,16 @@ color: orange;
   animation: zoomIn 1s ease-in-out ; /* Adjust the animation duration as needed */
   transform-origin: center;
 }
+.cardd-content p {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
 
+.cardd-content img,
+.cardd-content i {
+  margin-right: 120px; /* Adjust the margin as needed */
+  
+}
 /* Define the keyframes for the zoom-in animation */
 @keyframes zoomIn {
   0% {
