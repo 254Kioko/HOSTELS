@@ -273,7 +273,9 @@ select option {
 
 
 
-
+.cardd-content img{
+  width: 3%;
+}
 
 .main {
   max-width: 75rem;
