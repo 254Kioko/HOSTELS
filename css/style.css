@@ -563,8 +563,8 @@ select option {
 
 .description {
   position: relative;
-  animation: flyin 1.5s ease-in-out;
 }
+
 
 @keyframes flyin {
   0% {
@@ -578,7 +578,9 @@ select option {
 
 .describe h5 {
   position: relative;
-  animation: flyin 5s ease-in-out;
+}
+.describe .fa-smile-o{
+color: darkcyan;
 }
 
 @keyframes hop {
