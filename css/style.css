@@ -86,7 +86,7 @@ header .logo img{display: inline-block;margin: 0 auto 30px;max-width: 300px;}
 
 /* ---content-box--- */
 .content-box {}
-.content-box .wrap-box {padding:150px 10px; position: relative;}
+.content-box .wrap-box {padding:10px 10px; position: relative;}
 .content-box .header { margin-bottom: 40px;}
 .content-box .header h2{font-size: 54px; line-height: 1.2;font-weight: 500;color: #000000;}
 .content-box .header .wrapper{padding: 5px; display: inline-block;}
