@@ -34,14 +34,14 @@ html { -webkit-text-size-adjust: none;}
 .video embed,.video object,.video iframe { width: 100%;  height: auto;}
 img{max-width:100%;	height: auto;width: auto\9; /* ie8 */}
 
-a{color: #ff970b;text-decoration: none;}
+a{color: orange;text-decoration: none;}
 a:hover {text-decoration: underline;}
 
 h1, h2 	{font-size: 25px;line-height: 25px;}
 h3, h4	{font-size: 20px;line-height: 20px;}
 h5, h6	{font-size: 16px;line-height: 16px;}
 
-p{margin: 10px 0;color: #808080
+p{margin: 10px 0;color: #000000
 ;}
 
 .t-center{text-align: center;}
@@ -67,7 +67,7 @@ body .wrap-body{}
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Header--------------------------------- */
 /* ---------------------------------------------------------------------------- */
-header{background: 	#013220	;padding: 20px 0 20px;}
+header{background: 	#fff	;padding: 20px 0 20px;}
 header .wrap-header{}
 
 
@@ -268,9 +268,7 @@ select option {
 
 
 
-#cssmenu .fa{
-  color:orange;
-}
+
 
 
 
@@ -718,9 +716,6 @@ color: orange;
 
 
 
-.btnn {
-  background-size: 50%,100%;
-}
 
 .btnn::after {
 content: " ";
@@ -755,8 +750,8 @@ transition: background-size .4s ease-in-out;
 
 }
 
-a{
-color: orange;
+.btnn .a{
+color: white;
 
 }
 a:hover{
@@ -1134,8 +1129,8 @@ box-shadow: 0 0 24px #ff0068;
   padding: 27px 17px;
   letter-spacing: 15px;
   text-decoration: none;
-  color: #fff;
-  font-weight: 500; 
+  color: #013220;
+  font-weight: 700; 
   text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
@@ -1196,7 +1191,7 @@ box-shadow: 0 0 24px #ff0068;
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
-	background: #013220;
+	background: #fff;
 	margin: 0 0 30px;
   }
   #cssmenu ul {
@@ -1248,7 +1243,7 @@ box-shadow: 0 0 24px #ff0068;
   #cssmenu #menu-button {
     display: block;
     padding: 17px;
-    color: #dddddd;
+    color: #0d0d0d;
     cursor: pointer;
     font-size: 12px;
     text-transform: uppercase;
@@ -1261,8 +1256,8 @@ box-shadow: 0 0 24px #ff0068;
     display: block;
     height: 4px;
     width: 20px;
-    border-top: 2px solid #dddddd;
-    border-bottom: 2px solid #dddddd;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #0d0d0d;
     content: '';
   }
   #cssmenu #menu-button:before {
@@ -1272,7 +1267,7 @@ box-shadow: 0 0 24px #ff0068;
     display: block;
     height: 2px;
     width: 20px;
-    background: #dddddd;
+    background: #0d0d0d;
     content: '';
   }
   #cssmenu #menu-button.menu-opened:after {
@@ -1604,4 +1599,115 @@ box-shadow: 0 0 24px #ff0068;
     transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
     vertical-align: middle;
     white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stay p {
+	width: 40ch;
+	margin-block-end: 2rem;
+}
+.stay p:first-letter {
+	float: left;
+	font-family: "Montagu Slab", serif;
+	font-size: 8rem;
+	line-height: 1;
+	text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black,
+		0.25rem 0.25rem rgba(0 0 0 / 0.15);
+	color: #d9381e;
+	/* margin-top: 0.5rem; */
+	margin-right: 0.5rem;
+}
+/* styles.css */
+.stay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.stay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px; /* Adjust the font size as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media screen and (max-width: 480px) {
+  .stay {
+      font-size: 16px; /* Adjust the font size for small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+.counter {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+
+.counter li {
+  text-align: center;
+  flex: 1;
+}
+
+.counter h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #000000;
+}
+
+.counter i {
+  font-size: 24px;
+}
+
+
+.counter span {
+  font-size: 14px;
+  color: #000000;
+}
+.btnn {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+#cssmenu .fa{
+  color:orange;
 }
