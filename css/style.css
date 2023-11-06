@@ -161,6 +161,8 @@ article .info a:hover{ text-decoration: underline;}
 /* ---------------------------------------------------------------------------- */
 footer{text-align: center;background-image: url(../images/footer.jpg);min-height: 650px;}
 footer a{color: #fff;}
+footer a:hover{text-decoration:underline;}
+
 footer .wrap-footer{color: #fff;font-size: 13px;padding: 30px 20px;}
 footer .wrap-footer h3{margin-bottom: 10px;}
 footer ul.quick-link li{display: inline-block;margin: 0 10px 10px 0;}
