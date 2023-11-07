@@ -234,6 +234,20 @@ select option {
   color: orange;
   background-color: white;
 }
+/* Apply the initial styles for the input boxes */
+input[type="text"] {
+  border: 1px solid #ccc; /* Define the default border style */
+  padding: 5px;
+  transition: border-color 0.3s; /* Add a smooth transition effect for the border color */
+}
+
+/* Apply the styles when the input box is focused */
+input[type="text"]:focus {
+  border-color: cyan; /* Change the border color to cyan when focused */
+  box-shadow: 0 0 5px cyan; /* Apply a cyan box shadow when focused */
+  outline: none; /* Remove the default focus outline (optional) */
+}
+
 
 #contact_form .btn{max-width: 25%;}
 #contact_form .btn:hover{opacity: 0.7}
