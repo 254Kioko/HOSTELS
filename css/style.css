@@ -231,7 +231,7 @@ select {
 
 /* Style the options in the select element */
 select option {
-  color: orange;
+  color: black;
   background-color: white;
 }
 /* Apply the initial styles for the input boxes */
