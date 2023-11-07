@@ -250,7 +250,7 @@ input[type="text"]:focus {
 
 /* Apply the initial styles for the select element */
 select {
-  border: 1px solid #ccc; /* Define the default border style */
+  border: 1px solid #000000; /* Define the default border style */
   padding: 5px;
   transition: border-color 0.3s; /* Add a smooth transition effect for the border color */
 }
