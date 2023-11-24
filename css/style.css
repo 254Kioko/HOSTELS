@@ -310,7 +310,42 @@ input[type="date"]:focus {
 
 
 
+.bbtn {
+	background-image: linear-gradient(to right, darkgreen, #000000 100%);
+	border-radius: 40px;
+  box-sizing: border-box;
+	color: #000000;
+  border-color: #000000;
+	display: block;
+	font: 1.125rem 'Oswald', Arial, sans-serif; /*18*/
+	height:50px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	padding: 4px;
+	position: relative;
+  text-decoration: none;
+	width: 164px;
+	z-index: 2;
+}
 
+.bbtn:hover {
+	color: #fff;
+}
+
+.bbtn span {
+	align-items: center;
+	background: #e7e8e9;
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+}
+
+.bbtn:hover span {
+	background: transparent;
+}
 
 
 
