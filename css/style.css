@@ -1051,7 +1051,18 @@ box-shadow: 0 0 24px #ff0068;
 
 
 
+.divider{
+  width: 10%;
+  height: 3px; /* Adjust the height for your desired thickness */
+  background-color: #013220;   
+  margin: 0 auto; /* Center the divider horizontally */
 
+}
+@media (max-width: 768px) {
+  .divider {
+    width: 20%; /* Adjust the width as needed for mobile view */
+  }
+}
 
 
 
