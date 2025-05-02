@@ -1,343 +1,281 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
+
 <head>
-	<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
-<link rel="manifest" href="fav/site.webmanifest">
-<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-
-    <!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>Stay Hostels</title> 
-	
+    <meta charset="utf-8">
+    <title>Stay Hostels</title>
 
 	<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-<script>
-	
-	        function validateForm() {
-  // Get the form data from the user.
-  var name = document.getElementById("name").value;
-  var number = document.getElementById("number").value;
-  var email = document.getElementById("email").value;
-  var gender = document.getElementById("gender").value;
-
-  // Check if all fields are filled in.
-  if (name === "" || number === "" || email === "" || gender === "") {
-    alert("Please fill in all fields.");
-    return false;
-  }
-
-  // Check if the email address is valid.
-  if (!/\w+@\w+\.\w+/.test(email)) {
-    alert("Please enter a valid email address.");
-    return false;
-  }
-
-  // The form is valid, so allow it to be submitted.
-  return true;
-}
-
-// Add the event listener to the form.
-document.getElementById("ff").addEventListener("click", validateForm();
-	
-function SubForm (){
-    $.ajax({
-        url:'https://api.apispreadsheets.com/data/WZCZ1EiNGP0I1bUm/',
-        type:'post',
-        data:$("#ff").serializeArray(),
-        success: function(){
-          alert("Booking was successful! :)")
-        },
-        error: function(){
-          alert("Booking was successful!:)")
-        }
-    });
-}
-	
-</script>
-		
-
-    <!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1,">
-    
-    <!-- CSS
-  ================================================== -->
-  	<link rel="stylesheet" href="css/zerogrid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsiveslides.css">
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-	
-	<!-- Custom Fonts -->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
-	<script src="js/jquery-latest.min.js"></script>
-	<script src="js/script.js"></script>
-    <script src="js/jquery183.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
-    <script>
-		// You can also use "$(window).load(function() {"
-		$(function () {
-		  // Slideshow 
-		  $("#slider").responsiveSlides({
-			auto: true,
-			pager: false,
-			nav: true,
-			speed: 500,
-			namespace: "callbacks",
-			before: function () {
-			  $('.events').append("<li>before event fired.</li>");
-			},
-			after: function () {
-			  $('.events').append("<li>after event fired.</li>");
-			}
-		  });
-		});
-	</script>
-	
-	
-	
-    
-</head>
-<body class="contact-page">
-<div class="wrap-body">
-
-<!--////////////////////////////////////Header-->
-<header >
-
-	<div class="wrap-header zerogrid">
-		<div class="row">
-			<div id="cssmenu">
-				<ul>
-				   <li class='active'><a href="./">HOME</a></li>
-				   
-				   <li><a href="./contact">BOOK</a></li>
-                              <li><a href="#location">LOCATION</a> </li>
-  <li><a href="tel:+254799543648"><i class="fa fa-phone"></i></a> </li>
-									   <li><a href="https://goo.gl/maps/ujM1iEVPgXZQeXia7?coh=178573&entry=tt"><i class="fa fa-map-marker"></i></a> </li>
-									   <li><a href="https://wa.link/04qo6t"><i class="fa fa-whatsapp"></i></a> </li>
-									   <li><a href="mailto:stayhostels@gmail.com"><i class="fa fa-envelope"></i></a> </li>
-				</ul>
-			</div>
-		
-		</div>
-	</div>
-	
-</header>
-
-<!--////////////////////////////////////Container-->
-<section id="container">
-	<div class="wrap-container">
-
-		<!-----------------content-box-------------------->
-		<section class="content-box">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div id="main-content">
-						<div class="header">
-							<div class="zerogrid wrapper">
-								<h2 data-aos="slide-right">BOOK</h2>
-							</div>
-						</div>							
-						
-								</div>
-								<div class="col-2-3">
-									<div class="wrap-col">
-										<div class="contact">
-											<h5 class="color-orange" data-aos="fade-up">Personal Details</h5>
-											<div id="contact_form" data-aos="fade-up">
-
-												 <form id="ff" action="https://formspree.io/f/xoqodkyd" method="POST" onclick="return validateForm()">
-              <label class="row">
-                                                        <input type="text" name="name" id="name" placeholder="Enter your names" required="required" />
-                                                    </label>
-                                                    <br>
-                                                   
-                                                    <label class="row">
-                                                        <input type="text" name="number" id="number" placeholder="Enter your Phone Number" required="required" />
-                                                    </label>
-                                                    <br>
-                                                    <label class="row">
-                                                        <input type="text" name="email" id="email" placeholder="Enter your Email" required="required" />
-
-                                                    </label>
-                                                   <br>
-  <label for="check-in">Check-in Date:
-	 <input type="date" name="check-in-date" id="check-in-date"  required="required" > 
-                                                    
-	</label>									
-	<br>
-<label class="gender">
-  <select name="gender" required="required" >
-    <option value="">Select your gender</option>
-    <option value="male">Male</option>
-     <option value="female">Female</option>
-
-   </select>
-
-</label>
-   <br>
-<button class="custom-btn btn-7" onclick="return validateForm()"> <h6>Submit </h6></button>
-  </form>
-
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+      
+              function validateForm() {
+    // Get the form data from the user.
+    var name = document.getElementById("name").value;
+    var number = document.getElementById("number").value;
+    var email = document.getElementById("email").value;
+    var gender = document.getElementById("gender").value;
   
-											
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-1-3">
-									<div class="wrap-col" data-aos="fade-up">
-											<h5 class="color-orange" data-aos="fade-up" align="center">Booking Info </h5>
-											<p align="center"><u>Fill in your details in all the fields.</u></p>
-											<p data-aos="fade-up" align="center">Do not hesitate to contact us incase of any inquiries.
-											  <p align="center">
-												Phone Number- <a href="tel:+254799543648"> +254799543648
-					</p></p>
-												<p align="center"><a href="mailto:stayhostels@gmail.com"> stayhostels@gmail.com </a> </p>
-												<p align="center"><u> Or Visit us</u> </p>  
-											<p align="center"> Gents' Hostel <a href="https://goo.gl/maps/ujM1iEVPgXZQeXia7?coh=178573&entry=tt"> <i class="fa fa-map-marker"></i></a>                                                            
-												
-												&nbsp; 	&nbsp;	&nbsp; 	&nbsp;	&nbsp;
+    // Check if all fields are filled in.
+    if (name === "" || number === "" || email === "" || gender === "") {
+      alert("Please fill in all fields.");
+      return false;
+    }
+  
+    // Check if the email address is valid.
+    if (!/\w+@\w+\.\w+/.test(email)) {
+      alert("Please enter a valid email address.");
+      return false;
+    }
+  
+    // The form is valid, so allow it to be submitted.
+    return true;
+  }
+  
+  // Add the event listener to the form.
+  document.getElementById("ff").addEventListener("click", validateForm();
+      
+  function SubForm (){
+      $.ajax({
+          url:'https://api.apispreadsheets.com/data/WZCZ1EiNGP0I1bUm/',
+          type:'post',
+          data:$("#ff").serializeArray(),
+          success: function(){
+            alert("Booking was successful! :)")
+          },
+          error: function(){
+            alert("Booking was successful!:)")
+          }
+      });
+  }
+      
+  </script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-												Ladies' Hostel<a href="https://goo.gl/maps/ujM1iEVPgXZQeXia7?coh=178573&entry=tt"> <i class="fa fa-map-marker"></i></a></p>
-																					<div class="naps" align="center" data-aos="fade-up">
-											<span> We are active on social media as well <br> Follow us!	</span>
-										</div><br>
-										<a class="bbtn" href="#socials">
-  <span>Socials</span>
-</a>
-											 
-											
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	<div class="slider">
-	</div>
-	<!-- Slideshow -->
-	<div class="callbacks_container" >
-		<ul class="rslides" id="slider">
-			<li>
-				<img src="images/ukut.jpg" alt="">
-				<div class="caption">
-					</li>
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="icon">
 
-			<li>
-				<img src="images/bookk.jpeg" alt="">
-				<div class="caption">
-					
-			</li>
-			
-			
-			
-			
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 
-		</ul>
-	</div>
-	<div class="clear"></div>
-</div>
-		
-	<div class="clear"></div>
-</div>
-	<div class="divider div-transparent div-dot"></div>
-	</div>
-	<a id="location"></a>
-		<div class="col-1-2">
-									<div class="wrap-col">
-										<div class="neigh" data-aos="fade-up">
-		<h3> Neighbourhood</h3>		
-</div>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-bed me-3"></i>Stay Hostels</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <div class="nav-item dropdown">
+                            <div class="dropdown-menu m-0">
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary py-2 px-4">Book Now</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-0">
+              
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                        <h1 class="text-white mb-4">Book A Room</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="number" placeholder="Your Email" required="required">
+                                        <label for="number">Your Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="gender" required="required">
+                                          <option value="male">Male</option>
+                                          <option value="female">Female </option>
+                                        </select>
+                                        <label for="select1">Gender</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" id="check-in-date" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" required="required"/>
+                                        <label for="check-in-date">Checkin Date</label>
+                                    </div>
+                                </div>
+                              
+                             
+                               <br>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" onclick="return validateForm()">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Contact Us</h5>
+                    <h1 class="mb-5">Contact For Any Query</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="row gy-4">
+                            <div class="col-md-4">
+                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Booking</h5>
+                                <p><i class="fa fa-envelope-open text-primary me-2"></i>stayhostels@gmail.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Enquiry</h5>
+                                <p><i class="fa fa-envelope-open text-primary me-2"></i>stayhostels@gmail.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Call us on</h5>
+                                <p><i class="fa fa-phone text-primary me-2"></i>+254799543648</p>
+                            </div>
+                          
+                    </div>
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7977.559873979773!2d36.820258!3d-1.307222!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTgnMjYuMCJTIDM2wrA0OScyMi4yIkU!5e0!3m2!1sen!2ske!4v1746184237655!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                           
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                  
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Nairobi West</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254799543648</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>stayhostels@gmail.com</p>
+
+                        
+                    </div>
+                  
+                   
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Stay Hostels 2025</a>, All Right Reserved. 
 							
-								
-								<div class='embed-container maps'>
-									<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.777861536382!2d36.819833300000006!3d-1.3085278000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTgnMzAuNyJTIDM2wrA0OScxMS40IkU!5e0!3m2!1sen!2ske!4v1683640599999!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="450px" frameborder="0" style="border: 0"></iframe>
-									
-									
-									<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.779936674259!2d36.82025837375184!3d-1.3072221986803607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTgnMjYuMCJTIDM2wrA0OScyMi4yIkU!5e0!3m2!1sen!2ske!4v1683879522399!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>	</div>
-</section>
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="tel:+254741056273">devbyed</a>
+                        </div>
+                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
 
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
 
-<!--////////////////////////////////////Footer-->
-<footer>
-		<a id="socials"></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-	<div class="wrap-footer">
-		<div class="zerogrid">
-			<div class="row" data-aos="fade-up">
-				<h3>Contact</h3>
-				<span><a href="mailto:stayhostels@gmail.com"> EMAIL</a>   </span></br>
-				<span> <a href="https://goo.gl/maps/RgsWCh4y9k22v4Up7?coh=178573&entry=tt" target="new"></a> Nairobi West </span></br>
-				<span><strong> <a href="./developer"> Developer </a> </strong></span>
-				<ul class="social-buttons" data-aos="fade-up">
-					
-					<li><a href="tel:0799543648"><i class=" fa fa-phone"></i></a>
-					</li>
-					<li><a href="https://wa.link/04qo6t"><i class="fa fa-whatsapp"></i></a>
-					</li>
-					<li><a href="https://www.instagram.com/stayhostels/"><i class="fa fa-instagram"></i></a>
-					</li>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
 
-					<li><a href="mailto:stayhostels@gmail.com"><i class="fa fa-envelope"></i></a>
-
-				</ul>
-					</ul>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-								<span>Copyright &copy; 2024 Stay Hostels </span>
-
-			</div>
-		</div>
-	</div>
-</footer>
-	
-	<!-- Google Map -->
-	<script>
-		$('.maps').click(function () {
-		$('.maps iframe').css("pointer-events", "auto");
-	});
-
-	$( ".maps" ).mouseleave(function() {
-	  $('.maps iframe').css("pointer-events", "none"); 
-	});
-	</script>
-	
-</div>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init( {
-	disable: false,
-	delay: 0,
-  });
-</script>
-</body></html>
+</html>
