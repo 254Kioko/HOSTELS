@@ -1,426 +1,362 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+
 <head>
-	<link rel="apple-touch-icon" sizes="200x200" href="images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-<link rel="manifest" href="images/site.webmanifest">
-<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <title>Stay Hostels</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-	
-    <!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>Stay Hostels</title>
-	
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="icon">
 
-	
-    <!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,">
-    
-    <!-- CSS
-  ================================================== -->
-  	<link rel="stylesheet" href="css/zerogrid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsiveslides.css">
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 
-	<!-- Custom Fonts -->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
-	<script src="js/jquery-latest.min.js"></script>
-	<script src="js/script.js"></script>
-    <script src="js/jquery183.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
-    <script>
-		// You can also use "$(window).load(function() {"
-		$(function () {
-		  // Slideshow 
-		  $("#slider").responsiveSlides({
-			auto: true,
-			pager: false,
-			nav: true,
-			speed: 500,
-			namespace: "callbacks",
-			before: function () {
-			  $('.events').append("<li>before event fired.</li>");
-			},
-			after: function () {
-			  $('.events').append("<li>after event fired.</li>");
-			}
-		  });
-		});
-	</script>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-	
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="home-page">
-<div class="wrap-body">
 
-<!--////////////////////////////////////Header-->
-<header >
-
-	
-	<div class="wrap-header zerogrid">
-		<div class="row">
-			<div id="cssmenu"> 
-				<ul>
-				   <li class='active'><a href="./">HOME</a></li>
-				  
-				   <li><a href="./contact">BOOK</a></li>
-									   <li><a href="#amenities">AMENITIES</a> </li>
-  <li><a href="tel:+254799543648"><i class="fa fa-phone"></i></a> </li>
-									   <li><a href="https://goo.gl/maps/ujM1iEVPgXZQeXia7?coh=178573&entry=tt"><i class="fa fa-map-marker"></i></a> </li>
-									   <li><a href="https://wa.link/04qo6t"><i class="fa fa-whatsapp"></i></a> </li>
-									   <li><a href="mailto:stayhostels@gmail.com"><i class="fa fa-envelope"></i></a> </li>
-				</ul>
-			</div>
-			
-	</div>
-	
-</header>
-	<div class="slider">
-	<!-- Slideshow -->
-	<div class="callbacks_container" >
-		<ul class="rslides" id="slider">
-			<li>
-				<img src="images/boy.jpeg" height="100" width="100" alt="">
-
-					
-			</li>
-				<li>
-				<img src="images/bedz.jpg" height="100" width="100" alt="">
-				<div class="caption">
-					
-			</li>
-			<li>
-				<img src="images/tie.jpg" height="100" width="100" alt="">
-				<div class="caption">
-					
-			</li>
-					
-					
-			
-			
-			</li>
-
-		</ul>
-            
-	</div>
-	
-	<div class="clear"></div>
-</div>
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
 
 
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-bed me-3"></i>STAY HOSTELS</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <div class="dropdown-menu m-0">
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary py-2 px-4">Book </a>
+                </div>
+            </nav>
 
-</div>
-<!--////////////////////////////////////Container-->
-	<div class="wrap-container">
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Affordable comfort.<br> Unforgettable experiences.</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">In the buzzing Nairobi West district, Stay Hostels is more than just a place to sleep—it’s where stories start. Mingle with fellow students, rest in clean, stylish rooms, and enjoy the perks of free Wi-Fi and a warm, helpful staff—all at a wallet-friendly rate.
 
-		<!-----------------content-box-------------------->
-		<section class="content-box">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div id="main-content">
-						<div class="header">
-							<div class="zerogrid wrapper">
-								<div class="description"> 
-								<h1>ARE YOU A STUDENT LEARNING IN NAIROBI <br> LOOKING FOR AFFORDABLE ACCOMMODATION? </h1>
-									<h1 allign="center"> Welcome to Stay Hostels !</h1>
-
-							</div>
-						</div>							
-						
-								</div>
-								<div class="col-2-3">
-									<div class="wrap-col">
-										<div class="contact">
-											
-
-	
-	<div class="cardd" data-aos="fade-right">
-		<img src="images/soma.jpg" alt="Image">
-		<div class="cardd-content">
-		
-		</div>
-	  </div>
-
-											
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-1-3">
-									<div class="wrap-col">
-										<div class="description"  data-aos="fade-up">
-										<h1 class="color-orange">We cater to male and female students Offering chic accommodation at a pocket friendly price </h1>
-										</div>
-										<br>
-										<div class="naps"  data-aos="fade-up">
-											<span> Stay Hostels is where quality and comfort meets affordability!	<i class="fa fa-minus"></i><i class="fa fa-minus"></i><i class="fa fa-minus"></i></span>
-										</div>
-										<br>
-										
-					
-										<div class="naps"  data-aos="fade-up">
-											<span> We offer accommodation to students from ANY institution in Nairobi! <i class="fa fa-minus"></i><i class="fa fa-minus"></i><i class="fa fa-minus"></i>	</span>
-										</div>
-										<br>
-									
-									<br>
-									<div class="naps"  data-aos="fade-up">
-										<span><i class="fa fa-check"></i>Accommodation fees start from 12,000 Ksh</span> 
-									 </div>
-								</p></p>
-								<br>
-								<br>
-		<a class="btnn btnn--wide spacing-top-sm" href="./contact">Reserve<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path></svg></a>
-											 
-											
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-</div>
-		<!-----------------content-box-2-------------------->
-		<section class="content-box">
-			<main class="main flow">
-				<h1 class="main__heading"  data-aos="fade-up">Hostel  Facilities</h1>
-								<div class="divider"></div>
-
-				<div class="main__cards cards">
-				  <div class="cards__inner">
-					<div class="cards__card card"  data-aos="fade-up">
-					  <h2 class="card__heading"></h2>
-					  <p class="card__price">Amenities</p>
-					  <ul role="list" class="card__bullets flow">
-						
-						<li>Meals</li>
-						  <li> Comfortable Beds</li>
-						<li> High density mattress</li>
-						  <li> Clean water supply
-						 
-						  
-		
-					  </ul>
-					  <a href="tel:0799543648" class="card__cta cta">Call us</a>
-					</div>
-			  
-					<div class="cards__card card"  data-aos="fade-up">
-					  <h2 class="card__heading"></h2>
-					  <p class="card__price">Student Comfort and Security</p>
-					  <ul role="list" class="card__bullets flow">
-						<li>Hot showers</li>
-						<li>Hostel cook</li>
-						  <li>Fully furnished rooms</li>
-						<li>Free wifi</li>
-						<li>Kitchen appliances</li>
-		
-						<li>Entertainment</li>
-								<li> Key access exclusively for students and staff only</li>
-
-					  </ul>
-					  <a href="https://wa.link/04qo6t" class="card__cta cta">Message us</a>
-					</div>
-			  
-					<div class="cards__card card"  data-aos="fade-up">
-					  <h2 class="card__heading"></h2>
-					  <p class="card__price">Spacious Rooms</p>
-					  <ul role="list" class="card__bullets flow">
-						<li>Ample space for computer setup</li>
-						<li>Chair</li>
-					     <li>  Desk</li>
-						<li>Dinning area</li>
-					  </ul>
-					  <a href="https://goo.gl/maps/RgsWCh4y9k22v4Up7?coh=178573&entry=tt" class="card__cta cta">Visit us</a>
-					</div>
-				  </div>
-				  
-				  <div class="overlay cards__inner"></div>
-				</div>
-			  </main>
-		</section>
-</div>
-		<section class="content-box boxstyle-1 box-2">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-
-					<h2>BOOK ACCOMMODATION WITH US TODAY AND KICKSTART YOUR ACADEMIC JOURNEY!</h2>
-					<a href="./contact" class="custom-btn btn-7">BOOK NOW!</a>
+                                Book your stay today and feel at home wherever you go.</p>
+                            <a href="contact./html" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Room</a>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
 
 
-					
-				</div>
-			</div>
-		</section>
-		<br>
-	<br>
-</div>
-					 <a id="amenities"></a>
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5> Chefs</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Quality Food</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-bed text-primary mb-4"></i>
+                                <h5>Furniture</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-lock text-primary mb-4"></i>
+                                <h5>Security</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<section >
-				<h1 class="main__heading"  data-aos="fade-up">Hostel  Amenities</h1>
-						<div class="divider"></div>
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-shower text-primary mb-4"></i>
+                                <h5> Hot showers</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Kitchen Appliances</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-key text-primary mb-4"></i>
+                                <h5>Acess Key</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-wifi text-primary mb-4"></i>
+                                <h5>WIFI</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
 
 
-			<div class="outer-grid">
-				<div class="inner-grid">
-				<img  data-aos="fade-up" src="images/boys.jpeg"/>
-				<div class="naps">
-			<span> <i class="fa fa-check"></i> Furnished rooms	</span>
-				</div>
-				<img  data-aos="fade-up" src="images/books.jpg"/>
-				<div class="naps">
-				<span> <i class="fa fa-check"></i>Ample reading space	</span>
-				</div>
-				<img  data-aos="fade-up"  src="images/saf.jpg"/>
-				<div class="naps">
-				<span><i class="fa fa-check"></i> Fast internet connection	</span>
-				</div>
-				</div>
-				<div class="inner-grid">
-				<img  data-aos="fade-up" src="images/micro.jpg"/>
-				<div class="naps">
-					<span> <i class="fa fa-check"></i>Kitchen appliances	</span>
-				</div>
-				<img  data-aos="fade-up"  src="images/sheet.jpg"/>
-				<div class="naps">
-					<span> <i class="fa fa-check"></i>Comfort	</i></span>
-				</div>
-				<img  data-aos="fade-up"  src="images/green.jpg"/>
-				<div class="naps">
-					<span> <i class="fa fa-check"></i>Furniture	</i></span>
-				</div>
-				</div>
-				<div class="inner-grid">
-				<img  data-aos="fade-up"  src="images/doubleD.jpg"/>
-				<div class="naps">
-					<span> <i class="fa fa-check"></i>High density mattresses</span>
-				</div>
-				<img  data-aos="fade-up"  src="images/chef.jpg"/>
-				<div class="naps">
-				<span> <i class="fa fa-check"></i>Hostel chef</span>
-				</div>
-				<img  data-aos="fade-up"  src="images/masomo.jpg"/>
-				<div class="naps">
-					<span> <i class="fa fa-check"></i>Spacious rooms</span>
-				</div>
-		</section>
-	</div>
-				<br>
-	<br>	
-		<!-----------------content-box-3-------------------->
-		<section class="content-box box-3">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="row">
-						<div class="col-2-4">
-							<div class="wrap-col wrapper" >
-<div class="description"> 
-									<h1 data-aos="fade-up">GENT'S HOSTEL </h1>
-										
-								</div>								<p data-aos="fade-up" >The Gents hostels are located in Nairobi West opposite National oil petrol station.The premises is secure since only residents get access to the building. <br> The neighbourhood houses grocery stores, kiosks and a supermarket. <br> <br>  <br> </p>
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="images/sitting.jpeg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="images/fridge.jpeg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="images/boy.jpeg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="images/tie.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-bed text-primary me-2"></i>Stay Hostels</h1>
+                        <p class="mb-4">At Stay Hostels, we believe travel is all about connection—meeting new people, discovering new places, and feeling at home wherever you are.</p>
+                        <p class="mb-4"> we offer clean, affordable accommodation with a warm, social atmosphere. Whether you're here for a night or a month, our friendly team is dedicated to making your stay comfortable, memorable, and full of good vibes.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">4</h1>
+                                    <div class="ps-4">
+                                        <h6 class="text-uppercase mb-0"> Hostels</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">10</h1>
+                                    <div class="ps-4">
+                                        <h6 class="text-uppercase mb-0"> Colleges and Universities around us</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
 
-								<a class="buttonn medium round white" href="./contact">Book</a>
-							</div>
-						</div>
-						
-						<div class="col-2-4">
-							<div class="wrap-col wrapper"  data-aos="fade-up">
-<div class="description"> 
-									<h1 data-aos="fade-up">LADIES' HOSTEL </h1>
-										
-								</div>								<p data-aos="fade-up">The ladies' hostel is located in the gated Madaraka estate.The premises is manned 24/7 to ensure safety for our students. <br> Likewise, the hostel is located near grocery stores and a supermarket for easy access of your daily needs. <br> <br>   </p>
-								<a class="buttonn medium round white" href="./contact">Book</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!-----------------content-box-3-------------------->
-	
-		
-		
-		<!-----------------content-box-4-------------------->
 
-	<!-- Slideshow -->
-	
-<!--////////////////////////////////////Footer-->
-<footer>
-	
+        <!-- Menu Start -->
+       
+        <!-- Menu End -->
 
-	<div class="wrap-footer">
-		<div class="zerogrid">
-			<div class="row"  data-aos="fade-up">
-				<h3> <u>Contact</u></h3>
-				<span> Phone Number <a href="tel:+254799543648"> </a> +254799543648  </span></br>
-				
-				
-				<span> <a href="https://goo.gl/maps/ujM1iEVPgXZQeXia7?coh=178573&entry=tt" target="new">STAY HOSTELS </a> </span></br>
-								<span> <a href="./developer"> Developer  </a></span> <br> 
 
-<br>
+        <!-- Reservation Start -->
+      
 
-				<ul class="social-buttons"  data-aos="fade-up">
+       
+        <!-- Reservation Start -->
 
-					<li><a href="tel:+254799543648"><i class=" fa fa-phone"></i></a>
-					</li>
-					<li><a href="https://wa.link/04qo6t"><i class=" fa fa-whatsapp"></i></a>
-					</li>
-					<li><a href="https://www.instagram.com/stayhostels/"><i class="fa fa-instagram"></i></a>
-					</li>
-					<li><a href="mailto:stayhostels@gmail.com"><i class="fa fa-envelope"></i></a>
 
-				</ul>
-					</ul>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<span>Copyright &copy; 2024 Stay Hostels </span>
-			</div>
-		</div>
-	</div>
-</footer>
-	
-	<!-- Google Map -->
-	<script>
-		$('.maps').click(function () {
-		$('.maps iframe').css("pointer-events", "auto");
-	});
+        <!-- Team Start -->
+       
+        <!-- Team End -->
 
-	$( ".maps" ).mouseleave(function() {
-	  $('.maps iframe').css("pointer-events", "none"); 
-	});
-	</script>
-	
-</div>
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init( {
-	disable: false,
-	delay: 0,
-  });
-</script>
-</body></html>
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                    <h1 class="mb-5">Our Clients Say!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Stay Hostels truly felt like a home away from home. The staff were so warm and helpful, and I made great friends in the common area. I’ll definitely be back!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/black.jpeg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Student Name</h5>
+                                <small>Eddie</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Clean rooms, fast Wi-Fi, and a great location in Nairobi West. What more could you ask for? Easily one of the best hostels I’ve stayed at</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/black.jpeg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Student Name</h5>
+                                <small>Laurah</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>The atmosphere was so chill and welcoming. I loved the rooftop hangouts and how easy it was to meet other travelers. Highly recommend!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/black.jpeg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Student Name</h5>
+                                <small>Prince </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Affordable, safe, and super friendly! As a solo female traveler, I felt completely at ease. The staff went out of their way to make my stay comfortable</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="images/black.jpeg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Student Name</h5>
+                                <small>Jessy </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                  
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Nairobi West</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254799543648</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>stayhostels@gmail.com</p>
+
+                        
+                    </div>
+                  
+                   
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Stay Hostels 2025</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="tel:+254741056273">devbyed</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
