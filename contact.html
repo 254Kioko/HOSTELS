@@ -83,7 +83,11 @@
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
-       
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
         <!-- Spinner End -->
 
 
@@ -104,7 +108,7 @@
                             <div class="dropdown-menu m-0">
                             </div>
                         </div>
-                        <a href="/contact" class="nav-item nav-link active">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
                     </div>
                     <a href="" class="btn btn-primary py-2 px-4">Book Now</a>
                 </div>
@@ -131,11 +135,11 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
                         <h1 class="text-white mb-4">Book A Room</h1>
-                        <form>
+                        <form id="ff" action="https://formspree.io/f/xoqodkyd" method="POST" onclick="return validateForm()">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required="required">
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
@@ -143,25 +147,34 @@
                                 
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="number" placeholder="Your Email" required="required">
+                                        <input type="text" class="form-control" name="number" id="number" placeholder="Your Email" required="required">
                                         <label for="number">Your Phone Number</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select" id="gender" required="required">
-                                          <option value="male">Male</option>
-                                          <option value="female">Female </option>
-                                        </select>
-                                        <label for="select1">Gender</label>
-                                      </div>
+                                        <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" required="required">
+                                        <label for="email">Your Email</label>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" id="check-in-date" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" required="required"/>
+                                        <input type="text" class="form-control datetimepicker-input" name="check-in-date" id="check-in-date" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" required="required"/>
                                         <label for="check-in-date">Checkin Date</label>
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" name="gender" id="gender" required="required">
+                                            <option value="">Select your gender</option>
+
+                                          <option value="male">Male</option>
+                                          <option value="female">Female </option>
+                                        </select>
+                                        <label for="gender">Gender</label>
+                                      </div>
+                                </div>
+                              
                               
                              
                                <br>
@@ -272,6 +285,13 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init( {
+	disable: false,
+	delay: 0,
+  });
+</script>
 </body>
 
 </html>
