@@ -163,7 +163,11 @@
     height: 100; /* maintains aspect ratio */
 }
 
-
+@media (max-width: 768px) {
+    .hero-header img {
+        width: 100%; /* Full width on smaller devices */
+    }
+}
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
