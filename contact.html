@@ -5,53 +5,53 @@
     <meta charset="utf-8">
     <title>Stay Hostels</title>
 
-	<script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script>
-      
-              function validateForm() {
-    // Get the form data from the user.
+	<script>
+function validateForm() {
     var name = document.getElementById("name").value;
     var number = document.getElementById("number").value;
     var email = document.getElementById("email").value;
     var gender = document.getElementById("gender").value;
-  
-    // Check if all fields are filled in.
+
     if (name === "" || number === "" || email === "" || gender === "") {
-      alert("Please fill in all fields.");
-      return false;
+        alert("Please fill in all fields.");
+        return false;
     }
-  
-    // Check if the email address is valid.
+
     if (!/\w+@\w+\.\w+/.test(email)) {
-      alert("Please enter a valid email address.");
-      return false;
+        alert("Please enter a valid email address.");
+        return false;
     }
-  
-    // The form is valid, so allow it to be submitted.
     return true;
-  }
-  
-  // Add the event listener to the form.
-  document.getElementById("ff").addEventListener("click", validateForm();
-      
-  function SubForm (){
-      $.ajax({
-          url:'https://api.apispreadsheets.com/data/WZCZ1EiNGP0I1bUm/',
-          type:'post',
-          data:$("#ff").serializeArray(),
-          success: function(){
-            alert("Booking was successful! :)")
-          },
-          error: function(){
-            alert("Booking was successful!:)")
-          }
-      });
-  }
-      
-  </script>
+}
+
+function SubForm(event) {
+    event.preventDefault(); // stop normal form submission
+
+    if (!validateForm()) return false;
+
+    $.ajax({
+        url: 'https://api.apispreadsheets.com/data/WZCZ1EiNGP0I1bUm/',
+        type: 'post',
+        data: $("#ff").serializeArray(),
+        success: function () {
+            document.getElementById("form-message").innerHTML = `
+                <div class="alert alert-success mt-3" role="alert">
+                    ✅ Booking was successful! We’ll contact you shortly.
+                </div>
+            `;
+            document.getElementById("ff").reset();
+        },
+        error: function () {
+            document.getElementById("form-message").innerHTML = `
+                <div class="alert alert-danger mt-3" role="alert">
+                    ❌ Something went wrong. Please try again.
+                </div>
+            `;
+        }
+    });
+}
+</script>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -135,7 +135,7 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
                         <h1 class="text-white mb-4">Book A Room</h1>
-                        <form id="ff" name="contact" data-netlify="true" onclick="return validateForm()">
+                        <form id="ff" name="contact" data-netlify="true" onsubmit="SubForm(event)">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -180,6 +180,8 @@
                                <br>
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary w-100 py-3" onclick="return validateForm()">Submit</button>
+									<div id="form-message"></div>
+
                                 </div>
                             </div>
                         </form>
@@ -306,5 +308,6 @@
 </body>
 
 </html>
+
 
 
